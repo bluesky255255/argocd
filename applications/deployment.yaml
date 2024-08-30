@@ -1,0 +1,29 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+namespace: my-namespace
+metadata:
+  name: test-app
+  labels:
+    app: test-app
+    name: test-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: test-app
+      name: test-app
+  template:
+    metadata:
+      labels:
+        app: test-app
+        name: test-app
+    spec:
+      containers:
+      - image: quay.tingnkai.com:8443/finance/hello:latest
+        name: test-app
+        ports:
+        - containerPort: 8080
+          name: test-app
+      imagePullSecrets:
+        - name: finance-ocp-pull-secret
