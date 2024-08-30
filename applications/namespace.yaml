@@ -1,0 +1,6 @@
+apiVersion: project.openshift.io/v1
+description: "My project"
+displayName: my-project
+kind: ProjectRequest
+metadata:
+    name: my-project
