@@ -1,6 +1,6 @@
-apiVersion: project.openshift.io/v1
-description: "My project"
-displayName: my-project
-kind: ProjectRequest
+kind: Namespace
+apiVersion: v1
 metadata:
-    name: my-project
+  name: "my-namespace"
+  labels:
+    name: "my-namespace"
