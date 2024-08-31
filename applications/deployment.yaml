@@ -25,5 +25,3 @@ spec:
         ports:
         - containerPort: 8080
           name: test-app
-      imagePullSecrets:
-        - name: finance-ocp-pull-secret
