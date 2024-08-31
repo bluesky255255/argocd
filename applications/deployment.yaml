@@ -1,7 +1,7 @@
 ---
 apiVersion: apps/v1
 kind: Deployment
-namespace: my-namespace
+namespace: namespace1
 metadata:
   name: test-app
   labels:

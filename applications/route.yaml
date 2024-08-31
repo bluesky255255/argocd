@@ -1,5 +1,6 @@
 apiVersion: route.openshift.io/v1
 kind: Route
+namespaces: namespace1
 metadata:
   name: test-app
 spec:
