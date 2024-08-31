@@ -2,6 +2,8 @@
 kind: Namespace
 apiVersion: v1
 metadata:
+  annotations:
+    argocd.argoproj.io/sync-wave: "-1"
   name: "namespace1"
   labels:
     name: "namespace1"
