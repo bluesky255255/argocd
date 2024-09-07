@@ -1,0 +1,8 @@
+apiVersion: scheduling.k8s.io/v1
+kind: PriorityClass
+metadata:
+  name: normal-priority 
+value: 750000 
+preemptionPolicy: PreemptLowerPriority 
+globalDefault: true 
+description: "This priority class should be used for normal service pods only." 
