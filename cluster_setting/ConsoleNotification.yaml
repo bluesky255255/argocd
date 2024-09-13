@@ -1,0 +1,12 @@
+apiVersion: console.openshift.io/v1
+kind: ConsoleNotification
+metadata:
+  name: tingnkai
+spec:
+  text: This is an tingnkai notification message with an optional link.
+  location: BannerTop
+  link:
+    href: 'https://www.tingnkai.com'
+    text: Optional link text
+  color: '#fff'
+  backgroundColor: '#0088ce'
