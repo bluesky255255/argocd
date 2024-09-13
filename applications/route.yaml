@@ -5,9 +5,12 @@ metadata:
     argocd.argoproj.io/sync-wave: "1"
   name: test-app
 spec:
-  host: test-app-my-namespace.apps.ocp4.tingnkai.com
+  host: hello.apps.ocp4.tingnkai.com
   port:
     targetPort: 8080 
   to:
     kind: Service
-    name: test-app 
+    name: test-app
+  tls:
+    termination: edge
+  wildcardPolicy: None
