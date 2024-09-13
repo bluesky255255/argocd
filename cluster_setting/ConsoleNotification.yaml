@@ -6,7 +6,7 @@ spec:
   text: This is an tingnkai notification message with an optional link.
   location: BannerTop
   link:
-    href: 'https://www.tingnkai.com'
-    text: Optional link text
+    href: 'https://hello.apps.ocp4.tingnkai.com/'
+    text: Hello
   color: '#fff'
   backgroundColor: '#0088ce'
