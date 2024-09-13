@@ -3,4 +3,5 @@ kind: Kustomization
 resources:
   - high_priority.yaml 
   - normal_priority.yaml
-  - low_priority.yaml 
+  - low_priority.yaml
+  - ConsoleNotification.yaml
