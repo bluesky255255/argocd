@@ -1,3 +1,4 @@
+namespace: namespace1
 resources:
   - namespace.yaml
   - resourcequota.yaml
