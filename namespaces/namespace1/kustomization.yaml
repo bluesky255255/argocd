@@ -1,4 +1,5 @@
 namespace: namespace1
 resources:
   - namespace.yaml
+  - quota-limit-role.yaml
   - resourcequota.yaml
