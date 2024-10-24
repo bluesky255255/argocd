@@ -1,0 +1,8 @@
+namespace: namespace2
+commonLabels:
+  prometheus: appdeployment
+resources:
+  - namespace.yaml
+#patches:
+  #- resourcequota.yaml
+  - resourcequota.yaml
