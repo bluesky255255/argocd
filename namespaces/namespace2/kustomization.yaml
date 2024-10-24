@@ -3,6 +3,4 @@ commonLabels:
   prometheus: appdeployment
 resources:
   - namespace.yaml
-#patches:
-  #- resourcequota.yaml
   - resourcequota.yaml
