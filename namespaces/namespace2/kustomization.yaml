@@ -1,6 +1,0 @@
-namespace: namespace2
-Labels:
-  prometheus: appdeployment
-resources:
-  - namespace.yml
-  - resourcequota.yaml
