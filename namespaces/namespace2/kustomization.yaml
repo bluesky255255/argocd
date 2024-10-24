@@ -2,5 +2,5 @@ namespace: namespace2
 commonLabels:
   prometheus: appdeployment
 resources:
-  - namespace.yaml
+  - namespace.yml
   - resourcequota.yaml
