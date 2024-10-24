@@ -1,5 +1,5 @@
 namespace: namespace2
-commonLabels:
+Labels:
   prometheus: appdeployment
 resources:
   - namespace.yml
