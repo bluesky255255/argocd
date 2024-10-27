@@ -4,7 +4,5 @@ resources:
   - machine-configs 
   - priorityclass-cluster-role.yaml
   - cluster-role-binding.yaml
-  - high_priority.yaml 
-  - normal_priority.yaml
-  - low_priority.yaml
+  - priority.yaml
   - ConsoleNotification.yaml
