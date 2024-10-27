@@ -6,3 +6,6 @@ rules:
 - apiGroups: [""] 
   resources: ["resourcequotas", "limitranges"]
   verbs: ["*"]
+- apiGroups: [""]
+  resources: ["serviceaccounts"]
+  verbs: ["create"]
