@@ -2,5 +2,5 @@ namespace: namespace1
 resources:
   - namespace.yaml
   - ../common/
-#patches:
-  #- resourcequota.yaml
+patches:
+  - resourcequota.yaml
