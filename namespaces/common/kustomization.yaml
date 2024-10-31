@@ -1,0 +1,4 @@
+resources:
+  - quota-limit-role.yaml 
+  - quota-limit-rolebinding.yaml
+  - resourcequota.yaml
