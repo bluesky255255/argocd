@@ -4,16 +4,16 @@ apiVersion: v1
 metadata:
   annotations:
     argocd.argoproj.io/sync-wave: "-1"
-    openshift.io/node-selector: node-role.kubernetes.io/worker=
-  name: "namespace1"
+    openshift.io/node-selector: node-role.kubernetes.io/custom=
+  name: "namespace2"
   labels:
-    name: "namespace1"
+    name: "namespace2"
 ---
 apiVersion: rbac.authorization.k8s.io/v1
 kind: RoleBinding
 metadata:
   name: admin
-  namespace: namespace1
+  namespace: namespace2
 roleRef:
   apiGroup: rbac.authorization.k8s.io
   kind: ClusterRole

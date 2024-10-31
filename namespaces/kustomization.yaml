@@ -1,3 +1,4 @@
 resources:
 - namespace1
 - ldap-sync
+- namespace2
