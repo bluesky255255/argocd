@@ -1,8 +1,4 @@
 namespace: namespace2
 resources:
   - namespace.yaml
-  - quota-limit-role.yaml
-  - quota-limit-rolebinding.yaml
-#patches:
-  #- resourcequota.yaml
-  - resourcequota.yaml
+  - ../common/
