@@ -3,4 +3,8 @@ resources:
   - namespace.yaml
   - ../common/
 patches:
-  - resourcequota.yaml
+  - target:
+      version: v1
+      kind: ResourceQuota
+      name: compute
+    path: resourcequota.yaml
