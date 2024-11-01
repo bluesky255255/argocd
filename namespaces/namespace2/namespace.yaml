@@ -4,7 +4,7 @@ apiVersion: v1
 metadata:
   annotations:
     argocd.argoproj.io/sync-wave: "-1"
-    openshift.io/node-selector: node-role.kubernetes.io/custom=
+    openshift.io/node-selector: env=dedicated
   name: "namespace2"
   labels:
     name: "namespace2"
