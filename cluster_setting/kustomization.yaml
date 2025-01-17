@@ -2,7 +2,6 @@ apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 resources:
   - machine-configs 
-  - serviceaccount.yaml
   - cluster-role.yaml
   - cluster-role-binding.yaml
   - priority.yaml
