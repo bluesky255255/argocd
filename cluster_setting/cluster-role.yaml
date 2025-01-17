@@ -10,19 +10,3 @@ rules:
 - apiGroups: ["scheduling.k8s.io"]
   resources: ["priorityclasses"]
   verbs: ["create"]
----
-apiVersion: rbac.authorization.k8s.io/v1
-kind: ClusterRole
-metadata:
-  name: ldap-group-syncer
-rules:
-  - apiGroups:
-      - ''
-      - user.openshift.io
-    resources:
-      - groups
-    verbs:
-      - get
-      - list
-      - create
-      - update
