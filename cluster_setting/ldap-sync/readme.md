@@ -12,4 +12,7 @@ clusterrole.rbac.authorization.k8s.io/cluster-admin added: "OCP-Admins"
 
 oc adm policy add-role-to-user admin system:serviceaccount:openshift-gitops:openshift-gitops-argocd-application-controller -n ldap-sync
 
+oc adm policy add-cluster-role-to-group cluster-admin OCP-Admins
+
+oc delete secrets kubeadmin -n kube-system
 
