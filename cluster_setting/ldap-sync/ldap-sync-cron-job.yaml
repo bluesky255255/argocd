@@ -6,14 +6,14 @@ metadata:
   labels:
     app: cronjob-ldap-group-sync
 spec:                                                                                
-  schedule: "*/10 * * * *"                                                           
+  schedule: "*/10 * * * *"   
+  successfulJobsHistoryLimit: 5
+  failedJobsHistoryLimit: 5
   concurrencyPolicy: Forbid
   jobTemplate:
     spec:
       backoffLimit: 0
-      ttlSecondsAfterFinished: 1800                                                  
-      successfulJobsHistoryLimit: 5
-      failedJobsHistoryLimit: 5
+      ttlSecondsAfterFinished: 1800
       template:
         spec:
           containers:
