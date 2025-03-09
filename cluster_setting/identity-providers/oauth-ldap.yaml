@@ -21,7 +21,7 @@ spec:
         bindPassword:
           name: ldap-bind-password
         ca:
-          name: tingnkai-ca
+          name: ldap-ca-cert
         insecure: false
         url: 'ldaps://dc01.tingnkai.com:636/cn=Users,dc=tingnkai,dc=com?sAMAccountName?sub'
       mappingMethod: claim
