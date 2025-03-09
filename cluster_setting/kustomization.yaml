@@ -7,3 +7,4 @@ resources:
   - priority.yaml
   - ConsoleNotification.yaml
   - ldap-sync
+  - ldap-sync-cluster-role-binding.yaml
