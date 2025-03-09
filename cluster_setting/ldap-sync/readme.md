@@ -2,7 +2,7 @@
 
 secret/ldap-secret created
 
-[root@rhel9 ocp4_post]# oc create configmap ldap-ca --from-file=ca.crt=/root/ocp4_post/rootCA.pem
+[root@rhel9 ocp4_post]# oc create configmap ca-config-map --from-file=ca.crt=/root/ocp4_post/rootCA.pem
 configmap/ldap-ca created
 
 
