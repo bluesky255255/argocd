@@ -10,3 +10,15 @@ rules:
 - apiGroups: ["scheduling.k8s.io"]
   resources: ["priorityclasses"]
   verbs: ["create"]
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: ldap-sync-cluster-role
+rules:
+- apiGroups: [""]
+  resources: ["serviceaccounts"]
+  verbs: ["create"]
+- apiGroups: ["batch"]
+  resources: ["cronjobs"]
+  verbs: ["create"]
