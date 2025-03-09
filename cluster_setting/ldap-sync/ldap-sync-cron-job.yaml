@@ -48,7 +48,7 @@ spec:
                 secretName: "ldap-secret"                                            
             - name: "ldap-ca"
               configMap:
-                name: "ldap-ca"                                                
+                name: "ca-config-map"                                                
             - name: "ldap-sync-volume-whitelist"
               configMap:
                 name: "ldap-group-syncer-whitelist"
