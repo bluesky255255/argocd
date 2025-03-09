@@ -6,5 +6,3 @@ resources:
   - ldap-sync-cluster-role-binding.yaml
   - ldap-sync-config-map.yaml
   - ldap-sync-cron-job.yaml
-  - argocd-workaround993-role.yaml
-  - rolebinding.yaml
