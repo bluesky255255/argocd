@@ -3,6 +3,7 @@ kind: Route
 metadata:
   annotations:
     argocd.argoproj.io/sync-wave: "1"
+    haproxy.router.openshift.io/disable_cookies: "true"
   name: test-app
 spec:
   host: hello.apps.ocp4.tingnkai.com
