@@ -9,7 +9,27 @@ serviceaccounts is forbidden: User "system:serviceaccount:openshift-gitops:opens
 https://access.redhat.com/solutions/7007638
 oc adm policy add-role-to-user admin system:serviceaccount:openshift-gitops:openshift-gitops-argocd-application-controller -n ldap-sync
 
-For ldap-sync, need to add the scrert of AD ldap user.
-oc create secret generic ldap-bind-password --from-literal=bindPassword=${BIND_PASSWORD} -n ldap-sync
-oc create configmap ldap-ca --from-file=ca.crt=rootCA.pem -n ldap-sync
+For ldap-sync, need to add the scrert and AD cert. The job exepcted
+       volumes:
+        - configMap:
+            defaultMode: 420
+            name: ldap-group-syncer
+          name: ldap-sync-volume
+        - name: ldap-bind-password
+          secret:
+            defaultMode: 420
+            secretName: ldap-secret
+        - configMap:
+            defaultMode: 420
+            name: ca-config-map
+          name: ldap-ca
+        - configMap:
+            defaultMode: 420
+            name: ldap-group-syncer-whitelist
+          name: ldap-sync-volume-whitelist
+
+
+oc create secret generic ldap-secret --from-literal=bindPassword=${BIND_PASSWORD} -n ldap-sync
+oc create configmap ca-config-map --from-file=ca.crt=rootCA.pem -n ldap-sync
+
 
