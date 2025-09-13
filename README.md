@@ -17,6 +17,7 @@ group.user.openshift.io/cluster-admins created
 
 
 oc adm groups add-users cluster-admins USER
+
 <img width="538" height="47" alt="image" src="https://github.com/user-attachments/assets/8177b403-ea79-4249-a6b9-99cd3e2ff4f6" />
 
 group.user.openshift.io/cluster-admins added: USER
