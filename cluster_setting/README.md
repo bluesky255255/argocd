@@ -11,4 +11,5 @@ oc adm policy add-role-to-user admin system:serviceaccount:openshift-gitops:open
 
 For ldap-sync, need to add the scrert of AD ldap user.
 oc create secret generic ldap-bind-password --from-literal=bindPassword=${BIND_PASSWORD} -n ldap-sync
+oc create configmap ldap-ca --from-file=ca.crt=rootCA.pem -n ldap-sync
 
