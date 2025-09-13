@@ -9,4 +9,6 @@ serviceaccounts is forbidden: User "system:serviceaccount:openshift-gitops:opens
 https://access.redhat.com/solutions/7007638
 oc adm policy add-role-to-user admin system:serviceaccount:openshift-gitops:openshift-gitops-argocd-application-controller -n ldap-sync
 
-error when patching "/dev/shm/3571935328": priorityclasses.scheduling.k8s.io "low-priority" is forbidden: User "system:serviceaccount:openshift-gitops:openshift-gitops-argocd-application-controller" cannot patch resource "priorityclasses" in API group "scheduling.k8s.io" at the cluster scope
+For ldap-sync, need to add the scrert of AD ldap user.
+oc create secret generic ldap-bind-password --from-literal=bindPassword=${BIND_PASSWORD} -n ldap-sync
+
